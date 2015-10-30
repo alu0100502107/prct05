@@ -39,7 +39,7 @@ class Fraccion
      elsif (@num == 0 && @den != 0)
         "0"
      #Numerador != 0 y denominador = 0
-     else (@num != 0 && @den == 0)
+     else 
         "Infinito"
      end
    end
