@@ -58,5 +58,12 @@ class Fraccion
       Fraccion.new(num,den)
    end
    
+   #Método para multiplicar dos fracciones
+   def *(other)
+      num = other.num * @num
+      den = other.den * @den
+      Fraccion.new(num,den)
+   end
+   
    
 end   
