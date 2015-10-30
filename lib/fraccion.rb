@@ -51,5 +51,12 @@ class Fraccion
       Fraccion.new(num,den)
    end
    
+   #Método para restar dos fracciones
+   def -(other)       
+      num = other.den * @num - other.num * @den
+      den = other.den * @den
+      Fraccion.new(num,den)
+   end
+   
    
 end   
