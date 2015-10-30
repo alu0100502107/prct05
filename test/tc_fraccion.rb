@@ -32,4 +32,14 @@ class TestFraccion < Test::Unit::TestCase
       assert_raise(ArgumentError) {Fraccion.new(3,'b')}
    end  
    
+   def test_operaciones_aritmeticas
+       #Suma
+       assert_equal("29/15",(@f1+@f2).to_s)
+       assert_equal("0",(@f1+@f3).to_s)
+       assert_equal("-11/15",(@f1+@f4).to_s)
+       assert_equal("23/5",(@f1+@f7).to_s)
+       assert_equal("29/15",(@f2+@f5).to_s)
+       assert_equal("4/3",(@f2+@f6).to_s)
+    end
+   
 end   
