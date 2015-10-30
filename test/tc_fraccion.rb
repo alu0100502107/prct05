@@ -54,6 +54,13 @@ class TestFraccion < Test::Unit::TestCase
        assert_equal("12/5",(@f1*@f7).to_s)
        assert_equal("4/5",(@f2*@f5).to_s)
        assert_equal("0",(@f2*@f6).to_s)
+       #Dividir
+       assert_equal("9/20",(@f1/@f2).to_s)
+       assert_equal("-1",(@f1/@f3).to_s)
+       assert_equal("-9/20",(@f1/@f4).to_s)
+       assert_equal("3/20",(@f1/@f7).to_s)
+       assert_equal("20/9",(@f2/@f5).to_s)
+       assert_equal("Infinito",(@f2/@f6).to_s)
    end
     
 end   
