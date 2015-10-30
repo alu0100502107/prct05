@@ -47,6 +47,13 @@ class TestFraccion < Test::Unit::TestCase
        assert_equal("-17/5",(@f1-@f7).to_s)
        assert_equal("11/15",(@f2-@f5).to_s)
        assert_equal("4/3",(@f2-@f6).to_s)
-    end
-   
+       #Multiplicar
+       assert_equal("4/5",(@f1*@f2).to_s)
+       assert_equal("-9/25",(@f1*@f3).to_s)
+       assert_equal("-4/5",(@f1*@f4).to_s)
+       assert_equal("12/5",(@f1*@f7).to_s)
+       assert_equal("4/5",(@f2*@f5).to_s)
+       assert_equal("0",(@f2*@f6).to_s)
+   end
+    
 end   
