@@ -44,4 +44,12 @@ class Fraccion
      end
    end
    
+   #Método para sumar dos fracciones
+   def +(other)
+      num = other.den * @num + other.num * @den
+      den =  other.den * @den
+      Fraccion.new(num,den)
+   end
+   
+   
 end   
